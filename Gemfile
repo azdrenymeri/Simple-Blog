@@ -43,7 +43,25 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+  
+  #Guard is a command line tool to easily handle events on file system modifications.
+  gem 'guard', '~> 2.15'
+
+  #Guard::LiveReload automatically reloads your browser when 'view' files are modified.
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+
+  #make errors better looking
+gem 'better_errors', '~> 2.5'
 end
+
+
+
+#Bulma CSS
+gem 'bulma-rails', '~> 0.7.2'
+
+#Simple Form
+gem 'simple_form', '~> 4.1'
+
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
